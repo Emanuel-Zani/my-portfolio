@@ -21,7 +21,10 @@ export default function Form() {
     <div className="row mt-1">
       <div className="col-lg-4 offset-lg-4">
         <form
-          name="contact" method="POST" data-netlify="true"
+          action="/success"
+          name="contact"
+          method="POST"
+          data-netlify="true"
           class="card border-ligh mb-3 shadow rounded"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
