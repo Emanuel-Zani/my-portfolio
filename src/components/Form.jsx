@@ -21,13 +21,14 @@ export default function Form() {
     <div className="row mt-1">
       <div className="col-lg-4 offset-lg-4">
         <form
-          action="/success"
+          action="/contact"
           name="contact"
           method="POST"
           data-netlify="true"
           class="card border-ligh mb-3 shadow rounded"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div class="card-header text-center">Formulario de Contacto</div>
           <div class="card-body">
             <div>
