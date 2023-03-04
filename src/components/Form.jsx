@@ -21,7 +21,7 @@ export default function Form() {
     <div className="row mt-1">
       <div className="col-lg-4 offset-lg-4">
         <form
-          action="/contact"
+          action="/success"
           name="contact"
           method="POST"
           data-netlify="true"
