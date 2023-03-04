@@ -21,8 +21,7 @@ export default function Form() {
     <div className="row mt-1">
       <div className="col-lg-4 offset-lg-4">
         <form
-          name="contact"
-          netlify
+          name="contact" method="POST" data-netlify="true"
           class="card border-ligh mb-3 shadow rounded"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
@@ -33,6 +32,7 @@ export default function Form() {
               <input
                 onChange={(e) => setNombre(e.target.value)}
                 type="text"
+                name="nombre"
                 className="form-control mt-2 rounded"
                 placeholder="Ingrese nombre"
               />
@@ -50,6 +50,7 @@ export default function Form() {
               <input
                 onChange={validarEmail}
                 type="email"
+                name="email"
                 className="form-control mt-2 rounded"
                 placeholder="Ingrese email"
               />
@@ -66,6 +67,7 @@ export default function Form() {
               <input
                 onChange={(e) => setAsunto(e.target.value)}
                 type="text"
+                name="asunto"
                 className="form-control mt-2 rounded"
                 placeholder="Ingrese asunto"
               />
@@ -80,6 +82,7 @@ export default function Form() {
             <div>
               <label className="mt-2">Mensage: </label>
               <textarea
+                name="message"
                 onChange={(e) => setMensage(e.target.value)}
                 class="form-control mt-2 rounded"
                 rows="3"
